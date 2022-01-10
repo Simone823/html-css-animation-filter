@@ -133,6 +133,29 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: halfrotate 2s linear;
+}
+
+@keyframes halfrotate{
+    0%{
+        transform: rotate(0);
+    }
+
+    70%{
+        transform: rotate(300deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.ex-11-icon{
+    transition: all 5s;
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
