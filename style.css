@@ -156,6 +156,43 @@
     transition: all 5s;
 }
 
+.ex-12-button:hover .ex-12-top-white{
+    animation: moveleft 2s linear;
+}
+
+@keyframes moveleft{
+    0% {
+        left: 10%;
+    }
+
+    70% {
+        left: 100px;
+    }
+
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moveright 2s linear;
+}
+
+@keyframes moveright{
+    0% {
+        right: 10%;
+    }
+
+    70% {
+        right: 100px;
+    }
+
+    100% {
+        right: 10%;
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
